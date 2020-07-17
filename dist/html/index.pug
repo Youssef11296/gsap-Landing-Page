@@ -1,0 +1,37 @@
+doctype
+head
+    meta(charset="utf-8")
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    script(defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/gsap.min.js")
+    script(defer src="../js/app.js")
+    link(href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet")
+    link(rel="stylesheet" href="../css/style.css")
+    title GSAP Landing Page
+body
+    .open(style="--i:0s")
+    .open(style="--i:1s")
+    header
+        nav
+            .logo the logo
+            ul
+                for n in ['home', 'about', 'work', 'services', 'products', 'portfolio']
+                    li: a(href="#")=n
+            .icon
+                for n in ['line', 'line', 'line']
+                    span(class=n)
+    main
+        .content-box
+            .content
+                h2 welcome to my website
+                h2 created by gsap
+                p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam sapiente facere facilis ipsa. Cupiditate, ea iure! Rerum impedit incidunt deleniti!
+                a(href="#") learn more
+            .image
+                img(src="../img/bulb3.jpg")
+        .features-box
+            .features
+                for n in ['fa-facebook', 'fa-instagram', 'fa-twitter', 'fa-github', 'fa-linkedin']
+                    a(href="#"): i.fa(class=n).fa-3x
+            .shapes
+                .bottom-shape(style="--d:80s")
+                .left-shape(style="--d:40s")

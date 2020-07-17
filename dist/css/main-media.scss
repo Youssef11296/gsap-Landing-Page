@@ -1,0 +1,25 @@
+
+$big-h:2.8rem;
+$small-h:2.4rem;
+$p-size:1.4rem;
+
+main{
+    @import 'content-box-media';
+    .image{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    .features-box{
+        .shapes{
+            .bottom-shape{
+                width:280px;
+                height:280px;
+                left:20%;
+                bottom:-200px;
+                border:30px solid #000;
+            }
+        }
+    }
+}
