@@ -1,0 +1,17 @@
+@mixin set-flex($d, $j, $a){
+    display:flex;
+    flex-direction:$d;
+    justify-content:$j;
+    align-items:$a;
+}
+@mixin after(){
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:#000;
+    transform-origin:right;
+    animation:fadeToRight .6s linear forwards;
+}

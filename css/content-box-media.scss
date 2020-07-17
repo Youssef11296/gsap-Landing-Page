@@ -1,0 +1,17 @@
+.content-box{
+    .content{
+        h2{
+            width:100%;
+            &:nth-child(1){
+                font-size:$big-h;
+            }  
+            &:nth-child(2){
+                font-size:$small-h;
+            }
+        }
+        p{
+            width:100%;
+            font-size:$p-size;
+        }
+    }
+}

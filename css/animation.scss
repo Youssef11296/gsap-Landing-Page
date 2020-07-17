@@ -1,0 +1,44 @@
+@keyframes animate{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(-100%);
+    }
+}
+@keyframes fadeToRight{
+    from{
+        transform:scaleX(1);
+    }
+    to{
+        transform:scaleX(0);
+    }
+}
+@keyframes full-rotate{
+    from{
+        transform:rotate(200deg);
+    }
+    to{
+        transform:rotate(480deg);
+    }
+}
+@keyframes fadeToTop{
+    from{
+        opacity:0;
+        bottom:-80px;
+    }
+    to{
+        opacity:1;
+        bottom:0;
+    }
+}
+@keyframes fadeFromRight{
+    from{
+        opacity:0;
+        transform:translateX(400px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
